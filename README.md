@@ -7,11 +7,11 @@
 > 怎样优雅的运行Linux命令并实时的显示结果，就像Xshell一样呢？那就要属WebSSH了。
 > 基于Web的SSH有很多，基于Python的SSH也有很多，这些都是直接通信，中间没有额外管理。但是以Django为中转桥梁结合websocket和paramiko实现的，网上就很少了。下面是我结合网上参考后的实现图和原理讲解：
 ## 项目展示
-![image-20200418162650671]( https://github.com/wanglu58/webssh/screenshots/image-20200418162650671.png)
+![image-20200418162650671](https://raw.githubusercontent.com/wanglu58/webssh/master/screenshots/image-20200418162650671.png)
 
-![image-20200418162802400](https://github.com/wanglu58/webssh/screenshots/image-20200418162802400.png)
+![image-20200418162802400](https://raw.githubusercontent.com/wanglu58/webssh/master/screenshots/image-20200418162802400.png)
 
-![image-20200418163237539](https://github.com/wanglu58/webssh/screenshots/image-20200418163237539.png)
+![image-20200418163237539](https://raw.githubusercontent.com/wanglu58/webssh/master/screenshots/image-20200418163237539.png)
 
 
 
@@ -37,7 +37,7 @@
 
 ## 流程图
 
- ![img](https://github.com/wanglu58/webssh/screenshots/0.png) 
+ ![img](https://raw.githubusercontent.com/wanglu58/webssh/master/screenshots/0.png) 
 
  整个数据流：用户打开浏览器--》浏览器发送websocket请求给Django建立长连接--》Django与要操作的服务器建立SSH通道，实时的将收到的用户数据发送给SSH后的主机，并将主机执行的结果数据返回给浏览器 
 
