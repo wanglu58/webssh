@@ -1,0 +1,5 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+__pycache__
+.idea
+/django_webssh/migrations/*
+!/django_webssh/migrations/__init__.py
