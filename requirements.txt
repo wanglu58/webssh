@@ -11,7 +11,7 @@ channels-redis==2.1.1
 constantly==15.1.0
 cryptography==2.9
 daphne==2.2.5
-Django==2.0.13
+Django==2.2.10
 hiredis==1.0.1
 hyperlink==19.0.0
 idna==2.9
