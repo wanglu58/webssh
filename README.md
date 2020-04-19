@@ -92,9 +92,9 @@ self.channel.send(data)
 
 ```
 while not self.channel.exit_status_ready():
-   	data = self.channel.recv(40960)
-   	if not len(data):
-   		return
+    data = self.channel.recv(40960)
+    if not len(data):
+        return
 
     # SSH返回的数据需要转码为utf-8，否则json序列化会失败
     data = data.decode('utf-8')
@@ -225,5 +225,5 @@ while not self.channel.exit_status_ready():
 
 ## 总结
 
-完整代码，我已经放到Github上了，忘记了可以参考！
+完整代码，我已经放到GitHub上了，忘记了可以参考！
 
