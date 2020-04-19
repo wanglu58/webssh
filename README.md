@@ -181,6 +181,12 @@ websocket.send(bytes_data=data)
 rz命令类似，会在开始时输出`b'rz waiting to receive.**\x18B0100000023be50\r\x8a'`标记， 知道了这个规则， 就好区分用户上传和下载文件了：
 
 ```
+zmodemszstart = b'rz\r**\x18B00000000000000\r\x8a'
+zmodemszend = b'**\x18B0800000000022d\r\x8a'
+zmodemrzstart = b'rz waiting to receive.**\x18B0100000023be50\r\x8a'
+zmodemrzend = b'**\x18B0800000000022d\r\x8a'
+zmodemcancel = b'\x18\x18\x18\x18\x18\x08\x08\x08\x08\x08'
+
 while not self.channel.exit_status_ready():
     if self.zmodemOO:
         # 文件开始下载
