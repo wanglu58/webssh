@@ -9,7 +9,7 @@ cffi==1.14.0
 channels==2.0.2
 channels-redis==2.1.1
 constantly==15.1.0
-cryptography==2.9
+cryptography==3.2
 daphne==2.2.5
 Django==2.0.13
 hiredis==1.0.1
